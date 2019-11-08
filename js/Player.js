@@ -158,7 +158,7 @@
 
                     //check if player is finished
                     if (this.onFinishTile && this.gravity.isLanded()){
-                        this.xV -= (this.xV > 0) ? delta*this.xA*0 : 0; //decelerate
+                        this.xV -= (this.xV > 0) ? delta*this.xA*2 : 0; //decelerate
                         if (this.xV < 0){
                             this.xV = 0;
                             this.completeLevel();
