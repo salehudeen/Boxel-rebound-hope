@@ -292,8 +292,8 @@
             this.color = window.Game.theme.main_color1;
             
             //player skin options
-            if (skinId == 0) shape = window.tiles.drawShape(this.color, 0, 0, 16, true, 1); //default
-            else if (skinId == 1) shape = window.tiles.drawShape(this.color, 0, 0, 17, true, 1); //triangles
+            if (skinId == 1) shape = window.tiles.drawShape(this.color, 0, 0, 16, true, 1); //default
+            else if (skinId == 0) shape = window.tiles.drawShape(this.color, 0, 0, 17, true, 1); //triangles
             else if (skinId == 2) shape = window.tiles.drawShape(this.color, 0, 0, 18, true, 1); //circle
             else if (skinId == 3) shape = window.tiles.drawShape(this.color, 0, 0, 19, true, 1); //checkered
             else if (skinId == 4) shape = window.tiles.drawShape(this.color, 0, 0, 20, true, 1); //cat
