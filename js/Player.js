@@ -146,9 +146,6 @@
                     //accelerate screen 'x' position
                     if (this.xV < this.xMV) this.xV = (this.xV < this.xMV) ? this.xV + (delta*this.xA) : this.xMV; //accelerate
                     if (checkX == false) { window.Game.artboard.x -= (delta*this.xMV)*0.5; } //if hit wall
-                    else { //push player off screen
-                        if (window.Game.artboard.x < 0) window.Game.artboard.x += (delta*this.xV)*0.25;
-                        else window.Game.artboard.x = 0;
                     }
 
                     //set the new results
