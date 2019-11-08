@@ -158,7 +158,7 @@
 
                     //check if player is finished
                     if (this.onFinishTile && this.gravity.isLanded()){
-                        this.xV -= (this.xV > 0) ? delta*this.xA*2 : 0; //decelerate
+                        this.xV -= (this.xV > 0) ? delta*this.xA*0 : 0; //decelerate
                         if (this.xV < 0){
                             this.xV = 0;
                             this.completeLevel();
@@ -292,12 +292,12 @@
             this.color = window.Game.theme.main_color1;
             
             //player skin options
-            if (skinId == 1) shape = window.tiles.drawShape(this.color, 0, 0, 16, true, 1); //default
-            else if (skinId == 0) shape = window.tiles.drawShape(this.color, 0, 0, 17, true, 1); //triangles
+            if (skinId == 5) shape = window.tiles.drawShape(this.color, 0, 0, 16, true, 1); //default
+            else if (skinId == 1) shape = window.tiles.drawShape(this.color, 0, 0, 17, true, 1); //triangles
             else if (skinId == 2) shape = window.tiles.drawShape(this.color, 0, 0, 18, true, 1); //circle
             else if (skinId == 3) shape = window.tiles.drawShape(this.color, 0, 0, 19, true, 1); //checkered
             else if (skinId == 4) shape = window.tiles.drawShape(this.color, 0, 0, 20, true, 1); //cat
-            else if (skinId == 5) shape = window.tiles.drawShape(this.color, 0, 0, 21, true, 1); //dog
+            else if (skinId == 0) shape = window.tiles.drawShape(this.color, 0, 0, 21, true, 1); //dog
             else if (skinId == 6) shape = window.tiles.drawShape(this.color, 0, 0, 22, true, 1); //mouse
             else if (skinId == 7) shape = window.tiles.drawShape(this.color, 0, 0, 23, true, 1); //bird
             
